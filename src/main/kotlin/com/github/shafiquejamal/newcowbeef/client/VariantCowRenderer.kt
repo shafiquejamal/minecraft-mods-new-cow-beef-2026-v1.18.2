@@ -1,4 +1,4 @@
-package com.github.sj.newcowbeef.client
+package com.github.shafiquejamal.newcowbeef.client
 
 import net.minecraft.client.model.CowModel
 import net.minecraft.client.model.geom.ModelLayers

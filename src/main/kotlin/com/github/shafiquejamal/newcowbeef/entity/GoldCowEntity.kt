@@ -1,4 +1,4 @@
-package com.github.sj.newcowbeef.entity
+package com.github.shafiquejamal.newcowbeef.entity
 
 import net.minecraft.server.level.ServerLevel
 import net.minecraft.world.effect.MobEffectInstance

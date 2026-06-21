@@ -17,5 +17,5 @@ Starter skeleton for a Minecraft Forge `1.18.2` mod written in Kotlin.
 ## Project Notes
 
 - Mod ID: `new_cow_beef`
-- Main class: `com.github.sj.newcowbeef.NewCowBeefMod`
+- Main class: `com.github.shafiquejamal.newcowbeef.NewCowBeefMod`
 - Kotlin for Forge is included and ready for additional registries, items, blocks, and events.

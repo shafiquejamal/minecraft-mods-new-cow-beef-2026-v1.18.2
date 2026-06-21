@@ -1,7 +1,7 @@
-package com.github.sj.newcowbeef.client
+package com.github.shafiquejamal.newcowbeef.client
 
-import com.github.sj.newcowbeef.NewCowBeefMod
-import com.github.sj.newcowbeef.entity.ModEntities
+import com.github.shafiquejamal.newcowbeef.NewCowBeefMod
+import com.github.shafiquejamal.newcowbeef.entity.ModEntities
 import net.minecraft.resources.ResourceLocation
 import net.minecraftforge.api.distmarker.Dist
 import net.minecraftforge.client.event.EntityRenderersEvent

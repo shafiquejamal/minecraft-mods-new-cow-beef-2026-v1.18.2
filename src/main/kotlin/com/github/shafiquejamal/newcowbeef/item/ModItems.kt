@@ -1,6 +1,6 @@
-package com.github.sj.newcowbeef.item
+package com.github.shafiquejamal.newcowbeef.item
 
-import com.github.sj.newcowbeef.NewCowBeefMod
+import com.github.shafiquejamal.newcowbeef.NewCowBeefMod
 import net.minecraft.world.food.FoodProperties
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.Item

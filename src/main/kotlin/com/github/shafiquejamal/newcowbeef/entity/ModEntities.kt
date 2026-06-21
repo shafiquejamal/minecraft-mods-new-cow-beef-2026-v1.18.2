@@ -1,6 +1,6 @@
-package com.github.sj.newcowbeef.entity
+package com.github.shafiquejamal.newcowbeef.entity
 
-import com.github.sj.newcowbeef.NewCowBeefMod
+import com.github.shafiquejamal.newcowbeef.NewCowBeefMod
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.MobCategory

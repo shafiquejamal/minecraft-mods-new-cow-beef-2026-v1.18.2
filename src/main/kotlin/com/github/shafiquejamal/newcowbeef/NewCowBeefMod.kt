@@ -1,8 +1,8 @@
-package com.github.sj.newcowbeef
+package com.github.shafiquejamal.newcowbeef
 
 import com.mojang.logging.LogUtils
-import com.github.sj.newcowbeef.entity.ModEntities
-import com.github.sj.newcowbeef.item.ModItems
+import com.github.shafiquejamal.newcowbeef.entity.ModEntities
+import com.github.shafiquejamal.newcowbeef.item.ModItems
 import net.minecraftforge.fml.common.Mod
 import org.slf4j.Logger
 import thedarkcolour.kotlinforforge.forge.MOD_CONTEXT
