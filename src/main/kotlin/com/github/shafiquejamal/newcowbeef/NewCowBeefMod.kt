@@ -1,10 +1,13 @@
 package com.github.shafiquejamal.newcowbeef
 
 import com.mojang.logging.LogUtils
+import com.github.shafiquejamal.newcowbeef.client.ModEntityRenderers
 import com.github.shafiquejamal.newcowbeef.entity.ModEntities
 import com.github.shafiquejamal.newcowbeef.entity.ModEntityEvents
 import com.github.shafiquejamal.newcowbeef.item.ModItems
+import net.minecraftforge.api.distmarker.Dist
 import net.minecraftforge.fml.common.Mod
+import net.minecraftforge.fml.loading.FMLEnvironment
 import org.slf4j.Logger
 import thedarkcolour.kotlinforforge.forge.MOD_CONTEXT
 
@@ -21,6 +24,9 @@ class NewCowBeefMod {
         ModItems.ITEMS.register(modEventBus)
         modEventBus.addListener(ModEntityEvents::registerAttributes)
         modEventBus.addListener(ModEntityEvents::registerSpawnPlacements)
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            modEventBus.addListener(ModEntityRenderers::registerEntityRenderers)
+        }
         LOGGER.info("Initializing {} Kotlin Forge bootstrap", MOD_ID)
     }
 }

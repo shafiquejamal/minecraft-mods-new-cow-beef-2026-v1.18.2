@@ -54,6 +54,7 @@
 - When adding items, also add the corresponding language entry and item model.
 - When adding entity drops, keep the loot table under `data/new_cow_beef/loot_tables/entities/`.
 - When changing entity rendering, keep client-only code under `client/`.
+- When adding or changing custom entities, verify the full runtime chain: entity registration, attribute registration, client renderer registration, `/summon` behavior, and natural spawning if applicable. Do not treat a successful build as sufficient validation.
 
 ## Instruction Feedback
 
