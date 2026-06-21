@@ -2,6 +2,7 @@ package com.github.shafiquejamal.newcowbeef
 
 import com.mojang.logging.LogUtils
 import com.github.shafiquejamal.newcowbeef.entity.ModEntities
+import com.github.shafiquejamal.newcowbeef.entity.ModEntityEvents
 import com.github.shafiquejamal.newcowbeef.item.ModItems
 import net.minecraftforge.fml.common.Mod
 import org.slf4j.Logger
@@ -18,6 +19,8 @@ class NewCowBeefMod {
         val modEventBus = MOD_CONTEXT.getKEventBus()
         ModEntities.ENTITIES.register(modEventBus)
         ModItems.ITEMS.register(modEventBus)
+        modEventBus.addListener(ModEntityEvents::registerAttributes)
+        modEventBus.addListener(ModEntityEvents::registerSpawnPlacements)
         LOGGER.info("Initializing {} Kotlin Forge bootstrap", MOD_ID)
     }
 }

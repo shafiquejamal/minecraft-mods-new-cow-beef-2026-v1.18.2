@@ -40,17 +40,12 @@ object ModEntities {
     private fun entityId(path: String): String = ResourceLocation.fromNamespaceAndPath(NewCowBeefMod.MOD_ID, path).toString()
 }
 
-@Mod.EventBusSubscriber(modid = NewCowBeefMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 object ModEntityEvents {
-    @SubscribeEvent
-    @JvmStatic
     fun registerAttributes(event: EntityAttributeCreationEvent) {
         event.put(ModEntities.GOLD_COW.get(), Cow.createAttributes().build())
         event.put(ModEntities.BLUE_COW.get(), Cow.createAttributes().build())
     }
 
-    @SubscribeEvent
-    @JvmStatic
     fun registerSpawnPlacements(event: FMLCommonSetupEvent) {
         event.enqueueWork {
             SpawnPlacements.register(
