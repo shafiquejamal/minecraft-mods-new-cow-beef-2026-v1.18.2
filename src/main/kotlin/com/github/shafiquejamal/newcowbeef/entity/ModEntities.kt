@@ -37,7 +37,7 @@ object ModEntities {
             .build(entityId("blue_cow"))
     }
 
-    private fun entityId(path: String): String = ResourceLocation.fromNamespaceAndPath(NewCowBeefMod.MOD_ID, path).toString()
+    private fun entityId(path: String): String = ResourceLocation(NewCowBeefMod.MOD_ID, path).toString()
 }
 
 object ModEntityEvents {

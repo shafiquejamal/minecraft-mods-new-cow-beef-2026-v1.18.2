@@ -15,5 +15,5 @@ object ModEntityRenderers {
         }
     }
 
-    private fun texture(path: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath(NewCowBeefMod.MOD_ID, path)
+    private fun texture(path: String): ResourceLocation = ResourceLocation(NewCowBeefMod.MOD_ID, path)
 }
